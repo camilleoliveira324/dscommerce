@@ -1,6 +1,6 @@
 # 🛒 DSCommerce - E-commerce API com Spring Boot
 
-Projeto backend de um sistema de e-commerce desenvolvido com Spring Boot, contendo autenticação, autorização, cadastro de usuários, produtos e pedidos, além de operações administrativas.
+Este projeto é um backend completo para um sistema de e-commerce, desenvolvido com Spring Boot e JWT para autenticação. Aqui, explorei desafios reais como gestão de pedidos, controle de acesso por roles (admin/user) e arquitetura em camadas. O objetivo foi criar uma API escalável, seguindo boas práticas de código limpo e testes automatizados, simulando um ambiente profissional. Ideal para quem quer entender como construir uma base sólida para aplicações comerciais, contendo autenticação, autorização, cadastro de usuários, produtos e pedidos, além de operações administrativas.
 
 ---
 
