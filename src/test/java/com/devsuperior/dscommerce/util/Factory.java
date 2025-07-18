@@ -1,6 +1,7 @@
 package com.devsuperior.dscommerce.util;
 
 import com.devsuperior.dscommerce.dto.ProductDTO;
+import com.devsuperior.dscommerce.dto.ProductMinDTO;
 import com.devsuperior.dscommerce.entities.Category;
 import com.devsuperior.dscommerce.entities.Product;
 
@@ -15,10 +16,14 @@ public class Factory {
     }
 
     public static ProductDTO createProductDTO() {
-        var p = new Product(1L, "Phone", "Good phone", 800.0, "Good phone"), 800.0, "Good phone","https://raw.githubusercontent.com/devsuperior");
+        var p = new Product(1L, "Phone", "Good phone", 800.0, "Good phone");
         p.getCategories().add(new Category(2L, "Electronics"));
         return new ProductDTO(p);
     }
 
+    public static ProductMinDTO createProductMinDTO() {
+        var p = new Product(1L, "Phone", "Good phone", 800.0, "Good phone");
+        p.getCategories().add(new Category(2L, "Electronics"));
+        return new ProductMinDTO(p);
     }
 }

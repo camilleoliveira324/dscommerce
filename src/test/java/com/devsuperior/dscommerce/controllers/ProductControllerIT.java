@@ -1,9 +1,7 @@
-package com.devsuperior.dscommerce.controllers.mockmvcexer;
+package com.devsuperior.dscommerce.controllers;
 
-import com.devsuperior.dscommerce.controllers.ProductController;
 import com.devsuperior.dscommerce.dto.CategoryDTO;
 import com.devsuperior.dscommerce.dto.ProductDTO;
-import com.devsuperior.dscommerce.entities.Product;
 import com.devsuperior.dscommerce.util.Factory;
 import com.devsuperior.dscommerce.util.TokenUtil;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -17,14 +15,11 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Base64;
-
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.user;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-import static org.springframework.web.servlet.function.RequestPredicates.contentType;
 
 @SpringBootTest
 @AutoConfigureMockMvc
